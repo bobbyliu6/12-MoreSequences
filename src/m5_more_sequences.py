@@ -60,6 +60,10 @@ def run_test_sum_radii():
 
 
 def sum_radii(circles):
+    sum = 0
+    for k in range(len(circles)):
+        sum = sum + circles[k].radius
+    return sum
     """
     What comes in:
       -- a sequence of rg.Circle objects
@@ -77,7 +81,7 @@ def sum_radii(circles):
       :rtype: int | float
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     # Note: No fair using "slices" on ANY of these problems,
@@ -131,6 +135,7 @@ def run_test_count_last_n_odds():
 
 
 def count_last_n_odds(integers, n):
+
     """
     What comes in:
       -- a sequence of integers
